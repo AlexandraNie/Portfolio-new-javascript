@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alexa Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/form-validation.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/loader.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abril+Fatface&family=Alkalami&family=Cinzel:wght@400;600&family=Crimson+Text&family=Dancing+Script:wght@500;600&family=Indie+Flower&family=Italiana&family=Italianno&family=Libre+Baskerville&family=Libre+Bodoni:ital@1&family=Lobster&family=Merriweather+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Merriweather:wght@700&family=Michroma&family=Monoton&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,200;1,500&family=Oswald:wght@500;600;700&family=Oxygen:wght@300&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;0,500;1,400&family=Rubik+Moonrocks&family=Satisfy&family=Source+Serif+Pro:wght@400;600&family=Volkhov:wght@700&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="particles-js"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo animate__animated animate__flip">
+                <img src="project_images/man-with-laptop.png" alt="Logo">
+            </div>
+            <nav class="menu" id="menu">
+                <div class="close" id="close">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
+                </div>
+                <ul id="ul">
+                    <li class="menu-item">
+                        <a href="#skills">
+                            <p class="de_content animate__animated animate__zoomIn">Skills</p>
+                            <p class="en_content animate__animated animate__zoomIn">Skills</p>
+                            <p class="ua_content animate__animated animate__zoomIn">НАВИЧКИ</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#projects">
+                            <p class="de_content animate__animated animate__zoomIn">Projects</p>
+                            <p class="en_content animate__animated animate__zoomIn">Projects</p>
+                            <p class="ua_content animate__animated animate__zoomIn">ПРОЕКТИ</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#book">
+                            <p class="de_content animate__animated animate__zoomIn">Price</p>
+                            <p class="en_content animate__animated animate__zoomIn">Price</p>
+                            <p class="ua_content animate__animated animate__zoomIn">Ціна</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact">
+                            <p class="de_content animate__animated animate__zoomIn">Contact</p>
+                            <p class="en_content animate__animated animate__zoomIn">Contact</p>
+                            <p class="ua_content animate__animated animate__zoomIn">контакт</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <button class="translate translate_margin animate__animated animate__zoomIn" id="de_button">
+                            <img src="project_images/germany.png" width="40px" height="30px" alt="germany_flag">
+                        </button>
+
+                    </li>
+                    <li class="menu-item">
+                        <button class="translate translate_margin animate__animated animate__zoomIn" id="en_button">
+                        <img src="project_images/united-kingdom.png" width="40px" height="30px" alt="uk_flag">
+                        </button>
+                    </li>
+                    <li class="menu-item">
+                        <button class="translate translate_margin_ua animate__animated animate__zoomIn" id="ua_button">
+                        <img src="project_images/ukraine.png" width="40px" height="30px" alt="ukraine_flag">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="smallMenu" id="smallMenu">
+                <img src="project_images/menu-small.png" alt="Menu">
+            </div>
+        </div>
+    </header>
+
+
+
+<div class="backgroundOne">
+    <section class="introduction" id="introduction">
+        <div class="container">
+            <div class="introduction_text de_content">
+                <p>Als Webentwickler bin ich leidenschaftlich daran interessiert, <span>innovative und benutzerfreundliche Websiten</span> zu erstellen.</p>
+                <p>Mit fundierten Kenntnissen in <span>HTML, CSS und JavaScript</span> arbeite ich daran, maßgeschneiderte Lösungen für meine Kunden zu entwickeln.</p>
+                <p>Mein Fokus liegt darauf, <span>ansprechende Designs</span> zu kreieren, die die Markenidentität meiner Kunden widerspiegeln.</p>
+                <p>Ich biete <span>professionelle Beratung und Unterstützung</span> während des gesamten Entwicklungsprozesses an, um sicherzustellen, dass <span>die Website</span> den Anforderungen und Erwartungen entspricht.</p>
+                <p>Mein Ziel ist es, durch <span>kreative und technisch versierte Lösungen</span> das Online-Erlebnis meiner Kunden zu verbessern.</p>
+            </div>
+
+            <div class="introduction_text en_content">
+                <p>As a web developer, I am passionate about creating <span>innovative and user-friendly websites</span>.</p>
+                <p>With in-depth knowledge of <span>HTML, CSS and JavaScript</span>, I work on developing tailor-made solutions for my customers.</p>
+                <p>My focus is on creating <span>appealing designs</span> that reflect my customers' brand identity.</p>
+                <p>I offer <span>professional advice and support</span> throughout the entire development process to ensure that <span>the website</span> meets requirements and expectations.</p>
+                <p>My goal is to improve my customers' online experience through <span>creative and tech-savvy solutions</span>.</p>
+            </div>
+
+            <div class="introduction_text ua_content">
+                <p>Як веб-розробник, я захоплююсь створенням <span>інноваційних і зручних веб-сайтів</span>.</p>
+                <p>З глибокими знаннями <span>HTML, CSS і JavaScript</span> я працюю над розробкою індивідуальних рішень для своїх клієнтів.</p>
+                <p>Я зосереджуюсь на створенні <span>привабливих дизайнів</span>, які відображають фірмову ідентичність моїх клієнтів.</p>
+                <p>Я пропоную <span>професійну консультацію та підтримку</span> протягом усього процесу розробки, щоб переконатися, що <span>веб-сайт</span> відповідає вимогам і очікуванням.</p>
+                <p>Моя ціль — покращити взаємодію моїх клієнтів з Інтернетом за допомогою <span>креативних і технічно підкованих рішень</span>.</p>
+            </div>
+            <div class="introduction_image">
+                <img class="me" src="project_images/me.png" alt="me"/>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills_images">
+                <div class="skills_image">
+                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                    <p class="skills_name">HTML</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                    <p class="skills_name">CSS</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                    <p class="skills_name">JAVA SCRIPT</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/react_icon.png" alt="react_icon">
+                    <p class="skills_name">REACT</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/redux_icon.png" alt="redux_icon">
+                    <p class="skills_name">REDUX</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/bootstrap_icon.png" alt="bootstrap_icon">
+                    <p class="skills_name">BOOTSTRAP</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/gsap_icon.png" alt="gsap_icon">
+                    <p class="skills_name">GSAP</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/adobe_photoshop_icon.png" alt="photoshop_icon">
+                    <p class="skills_name">PHOTOSHOP</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image  image-github" src="project_images/github_icon.png" alt="github_icon">
+                    <p class="skills_name">GITHUB</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/figma_icon.png" alt="figma_icon">
+                    <p class="skills_name">FIGMA</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/node_icon.png" alt="node_icon">
+                    <p class="skills_name">NODE</p>
+                </div>
+                <div class="skills_image">
+                    <img class="image" src="project_images/jQuery-icon.png" alt="jQuery_icon">
+                    <p class="skills_name">JQUERY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="certificates">
+    <div class="container">
+        <div class="certificate-block">
+            <div>
+                <img class="certificate_image certificate_one" src="project_images/FrontEndDeveloper.png" alt="certificate">
+            </div>
+            <div>
+                <img class="certificate_image" src="project_images/Bootstrap_CT.png" alt="certificate">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="accordion-text">
+<div class="accordion container" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <img class="icon-head" src="project_images/icon-head.png" width="50px" height="50px" alt="icon-head">
+                <strong class="de_content">WARUM BRAUCHEN SIE EINE EIGENE WEBSEITE?</strong>
+                <strong class="en_content">WHY DO YOU NEED YOUR OWN WEBSITE?</strong>
+                <strong class="ua_content">НАВІЩО ВАМ ПОТРІБЕН СВІЙ САЙТ?</strong>
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <div class="accord-vor-de">
+                    <div class="de_content">
+                    <p>Im Zeitalter der sozialen Medien kann es vorkomen, dass eine Seite Ihnen als Relikt der Vergangenheit erscheint.</p>
+                    <p>Dies ist jedoch nicht der Fall!</p>
+                    <p>Hier sind einige Gründe, warum eine Webseite so wichtig ist:</p>
+                    </div>
+                    <div class="en_content">
+                        <p>In the age of social media, a site may seem like a relic of the past.</p>
+                        <p>However, this is not the case!</p>
+                        <p>Here are some reasons why a website is so important:</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>У епоху соціальних медіа сайт може здаватися пережитком минулого.</p>
+                        <p>Однак це не так!</p>
+                        <p>Ось кілька причин, чому веб-сайт такий важливий:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item ">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <img src="project_images/knopf1.png" width="40px" height="40px" alt="knopf">
+                    <strong class="de_content">PROFESSIONALITÄT</strong>
+                    <strong class="en_content">PROFESSIONALISM</strong>
+                    <strong class="ua_content">ПРОФЕСІОНАЛІЗМ</strong>
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse ">
+            <div class="accordion-body">
+                <p class="de_content">Die Websseite verleiht Ihrem Geschäft oder Ihrem persönlichen Brand mehr Autorität und Vertrauen.</p>
+                <p class="en_content">The website gives your business or personal brand more authority and trust.</p>
+                <p class="ua_content">Веб-сайт надає вашому бізнесу чи особистому бренду більше авторитету та довіри.</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <img src="project_images/knopf1.png" width="40px" height="40px" alt="knopf">
+                    <strong class="de_content">KONTROLLE</strong>
+                    <strong class="en_content">CONTROL</strong>
+                    <strong class="ua_content">КОНТРОЛЬ</strong>
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+               <p class="de_content">Sie haben die vollständige Kontrolle über den Inhalt, das Design und die Funktionalität Ihrer Webseite.</p>
+                <p class="en_content">You have complete control over the content, design and functionality of your website.</p>
+                <p class="ua_content">Ви маєте повний контроль над змістом, дизайном і функціональністю свого сайту.</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                <img src="project_images/knopf1.png" width="40px" height="40px" alt="knopf">
+                    <strong class="de_content">SEO</strong>
+                    <strong class="en_content">SEO</strong>
+                    <strong class="ua_content">SEO</strong>
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse ">
+            <div class="accordion-body">
+                <div class="de_content">
+                <p>Menschen suchen im Internet nach Informationen.</p>
+                <p>Eine Optimiterung kann dazu beitragen,dass Ihre Webseite in den Suchergebnissen einen hohen Rang einnimmt.</p>
+                </div>
+                <div class="en_content">
+                    <p>People search for information on the Internet.</p>
+                    <p>Optimization can help your website rank high in search results.</p>
+                </div>
+                <div class="ua_content">
+                    <p>Люди шукають інформацію в Інтернеті.</p>
+                    <p>Оптимізація може допомогти вашому веб-сайту отримати високі позиції в результатах пошуку.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                <img src="project_images/knopf1.png" width="40px" height="40px" alt="knopf">
+                    <strong class="de_content">INFORMATIONS ZENTRALISIERUNG</strong>
+                    <strong class="en_content">INFORMATION CENTRALIZATION</strong>
+                    <strong class="ua_content">ЦЕНТРАЛІЗАЦІЯ ІНФОРМАЦІЇ</strong>
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse ">
+            <div class="accordion-body">
+                <p class="de_content">Eine Adresse, wo alle wichtige Informationen über Sie oder Ihr Unternehmen dargestellt werden.</p>
+                <p class="en_content">An address where all important information about you or your company is displayed.</p>
+                <p class="ua_content">Адреса, де відображається вся важлива інформація про вас або вашу компанію.</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                <img src="project_images/knopf1.png" width="40px" height="40px" alt="knopf">
+                    <strong class="de_content">EIGENER KOMMUNIKATIONSKANAL</strong>
+                    <strong class="en_content">OWN COMMUNICATION CHANNEL</strong>
+                    <strong class="ua_content">ВЛАСНИЙ КАНАЛ ЗВ'ЯЗКУ</strong>
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse ">
+            <div class="accordion-body">
+                <p class="de_content">Sie sind nicht auf Algorithmen sozialer Netzwerke angewiesen und können direkt mit Ihrem Publikum kommunizieren.</p>
+                <p class="en_content">You don't rely on social network algorithms and can communicate directly with your audience.</p>
+                <p class="ua_content">Ви не покладаєтеся на алгоритми соціальних мереж і можете безпосередньо спілкуватися зі своєю аудиторією.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+<section id="services">
+    <div class="container">
+        <div class="section-header">
+            <h3 class="heading de_content">Was sollte eine Landingpage-Website enthalten?</h3>
+            <h3 class="heading en_content">What should a landing page website contain?</h3>
+            <h3 class="heading ua_content">Що має містити веб-сайт цільової сторінки?</h3>
+        </div>
+        <div class="wrapper">
+            <div class="reason-block">
+                <span class="number de_content">1</span>
+                <span class="number en_content">1</span>
+                <span class="number ua_content">1</span>
+                <div class="reason-text">
+                    <div class="de_content">
+                        <h2>Logo und Firmenname</h2>
+                    </div>
+                    <div class="en_content">
+                        <h2>Logo and company name</h2>
+                    </div>
+                    <div class="ua_content">
+                        <h2>Логотип і назва компанії</h2>
+                    </div>
+                    <div class="de_content">
+                        <p>Sie sollten auf der Hauptseite der Website platziert werden.</p>
+                    </div>
+                    <div class="en_content">
+                        <p>They should be placed on the main page of the site.</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>Їх необхідно розмістити на головній сторінці сайту.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reason-block">
+                <span class="number de_content">2</span>
+                <span class="number en_content">2</span>
+                <span class="number ua_content">2</span>
+                <div class="reason-text">
+                    <div class="de_content">
+                        <h2>Beschreibung</h2>
+                    </div>
+                    <div class="en_content">
+                        <h2>Description</h2>
+                    </div>
+                    <div class="ua_content">
+                        <h2>Oпис</h2>
+                    </div>
+                    <div class="de_content">
+                        <p>Was Sie tun und wie Sie sich von Ihren Mitbewerbern unterscheiden.</p>
+                    </div>
+                    <div class="en_content">
+                        <p>What you do and how you differ from your competitors.</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>Що ви робите і чим ви відрізняєтесь від своїх конкурентів.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="reason-block">
+                <span class="number de_content">3</span>
+                <span class="number en_content">3</span>
+                <span class="number ua_content">3</span>
+                <div class="reason-text">
+                    <div class="de_content">
+                        <h2>Kontaktinformationen</h2>
+                    </div>
+                    <div class="en_content">
+                        <h2>Contact information</h2>
+                    </div>
+                    <div class="ua_content">
+                        <h2>Контактна інформація</h2>
+                    </div>
+                    <div class="de_content">
+                        <p>Telefonnummer,E-Mail-Adresse,Firmenadresse.</p>
+                    </div>
+                    <div class="en_content">
+                        <p>Telephone number,email address,company address.</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>Номер телефону,адреса електронної пошти,адреса вашої компанії.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reason-block">
+                <span class="number de_content">4</span>
+                <span class="number en_content">4</span>
+                <span class="number ua_content">4</span>
+                <div class="reason-text">
+                    <div class="de_content">
+                        <h2>Ihre Produkte/ Dienstleistungen</h2>
+                    </div>
+                    <div class="en_content">
+                        <h2>Your products/services</h2>
+                    </div>
+                    <div class="ua_content">
+                        <h2>Ваші продукти/послуги</h2>
+                    </div>
+                    <div class="de_content">
+                        <p>Deren Beschreibung sollte  auf der Website angezeigt werden.</p>
+                    </div>
+                    <div class="en_content">
+                        <p>Their description should be displayed on the website.</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>Їх опис повинен бути розміщений на сайті.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reason-block">
+                <span class="number de_content">5</span>
+                <span class="number en_content">5</span>
+                <span class="number ua_content">5</span>
+                <div class="reason-text">
+                    <div class="de_content">
+                        <h2>Kundenrezensionen</h2>
+                    </div>
+                    <div class="en_content">
+                        <h2>Customer reviews</h2>
+                    </div>
+                    <div class="ua_content">
+                        <h2>Відгуки покупців</h2>
+                    </div>
+                    <div class="de_content">
+                        <p>Bewertungen zufriedener Kunden,die die Qualität Ihrer Produkte und Dienstleistungen bestätigen.</p>
+                    </div>
+                    <div class="en_content">
+                        <p>Reviews from satisfied customers that confirm the quality of your products and services.</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>Відгуки задоволених клієнтів,які підтверджують якість ваших товарів і послуг.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reason-block">
+                <span class="number de_content">6</span>
+                <span class="number en_content">6</span>
+                <span class="number ua_content">6</span>
+                <div class="reason-text">
+                    <div class="de_content">
+                        <h2>Fotos und Videos</h2>
+                    </div>
+                    <div class="en_content">
+                        <h2>Photos and videos</h2>
+                    </div>
+                    <div class="ua_content">
+                        <h2>Фото та відео</h2>
+                    </div>
+                    <div class="de_content">
+                        <p>Fotos und Videos, welche Produkte oder Dienstleistungen Sie anbieten.</p>
+                    </div>
+                    <div class="en_content">
+                        <p>Photos and videos of what products or services you offer.</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>Фотографії та відео про продукти або послуги,які ви пропонуєте.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reason-block">
+                <span class="number de_content">7</span>
+                <span class="number en_content">7</span>
+                <span class="number ua_content">7</span>
+                <div class="reason-text">
+                    <div class="de_content">
+                        <h2>Social-Media-Links</h2>
+                    </div>
+                    <div class="en_content">
+                        <h2>Social-Media-Links</h2>
+                    </div>
+                    <div class="ua_content">
+                        <h2>Посилання на соціальні мережі</h2>
+                    </div>
+                    <div class="de_content">
+                        <p>Links zu Social-Media-Konten,wie Facebook,Instagram,Linkedin.</p>
+                    </div>
+                    <div class="en_content">
+                        <p>Links to social media accounts such as Facebook,Instagram,Linkedin.</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>Посилання на облікові записи соціальних мереж,таких як Facebook,Instagram,Linkedin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reason-block">
+                <span class="number de_content">8</span>
+                <span class="number en_content">8</span>
+                <span class="number ua_content">8</span>
+                <div class="reason-text">
+                    <div class="de_content">
+                        <h2>Anfahrtskarte</h2>
+                    </div>
+                    <div class="en_content">
+                        <h2>Directions map</h2>
+                    </div>
+                    <div class="ua_content">
+                        <h2>Карта маршруту</h2>
+                    </div>
+                    <div class="de_content">
+                        <p>Ihre Standortkarte,damit Kunden Ihr Büro oder Geschäft schnell finden können.</p>
+                    </div>
+                    <div class="en_content">
+                        <p>Your location map to help customers find your office or store quickly.</p>
+                    </div>
+                    <div class="ua_content">
+                        <p>Ваша карта розташування,щоб допомогти клієнтам швидко знайти ваш офіс чи магазин.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="container">
+        <div class="projects_title de_content">
+            <h2>My Projects</h2>
+        </div>
+        <div class="projects_title en_content">
+            <h2>My Projects</h2>
+        </div>
+        <div class="projects_title ua_content">
+            <h2>Мої проекти</h2>
+        </div>
+
+        <div class="mockups" id="mockups">
+
+
+            <div class="mockup">
+                <div class="mockup_image">
+                    <img class="projects_image" src="project_images/Recipes-react-Mockup1.png" alt="mockup_recipes"/>
+                </div>
+                <div class="mockup_icons">
+                    <div class="mockup_skills">
+                        <div class="skills_image">
+                            <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/react_icon.png" alt="react_icon">
+                        </div>
+                    </div>
+                    <a href="https://new-recipes-react-project.netlify.app/" class="mockup_button de_content" target="_blank">Show more</a>
+                    <a href="https://new-recipes-react-project.netlify.app/" class="mockup_button en_content" target="_blank">Show more</a>
+                    <a href="https://new-recipes-react-project.netlify.app/" class="mockup_button ua_content" target="_blank">Показати</a>
+                </div>
+            </div>
+
+
+
+            <div class="mockup">
+                <div class="mockup_image">
+                    <img class="projects_image" src="project_images/Santa-Mockup1.png" alt="mockup_santa"/>
+                </div>
+                <div class="mockup_icons">
+                    <div class="mockup_skills">
+                        <div class="skills_image">
+                            <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                        </div>
+                    </div>
+                    <a href="https://santa-in-the-town.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                    <a href="https://santa-in-the-town.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                    <a href="https://santa-in-the-town.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                </div>
+            </div>
+
+            <div class="mockup">
+                <div class="mockup_image">
+                    <img class="projects_image" src="project_images/Wedding-Mockup1.png" alt="mockup_wedding"/>
+                </div>
+                <div class="mockup_icons">
+                    <div class="mockup_skills">
+                        <div class="skills_image">
+                            <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/bootstrap_icon.png" alt="bootstrap_icon">
+                        </div>
+                    </div>
+                    <a href="https://photographer-page-bootstrap.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                    <a href="https://photographer-page-bootstrap.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                    <a href="https://photographer-page-bootstrap.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                </div>
+            </div>
+
+            <div class="mockup">
+                <div class="mockup_image">
+                    <img class="projects_image" src="project_images/Wetter-Mockup1.png" alt="mockup_wetter"/>
+                </div>
+                <div class="mockup_icons">
+                    <div class="mockup_skills">
+                        <div class="skills_image">
+                            <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                        </div>
+                    </div>
+                    <a href="https://weather-today-empty.glitch.me" class="mockup_button de_content" target="_blank">Show more</a>
+                    <a href="https://weather-today-empty.glitch.me" class="mockup_button en_content" target="_blank">Show more</a>
+                    <a href="https://weather-today-empty.glitch.me" class="mockup_button ua_content" target="_blank">Показати</a>
+                </div>
+            </div>
+
+            <div class="mockup">
+                <div class="mockup_image">
+                    <img class="projects_image" src="project_images/Relax-Mockup1.png" alt="mockup_relax"/>
+                </div>
+                <div class="mockup_icons">
+                    <div class="mockup_skills">
+                        <div class="skills_image">
+                            <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                        </div>
+                        <div class="skills_image">
+                            <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                        </div>
+                    </div>
+                    <a href="https://relax-relax-relax.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                    <a href="https://relax-relax-relax.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                    <a href="https://relax-relax-relax.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                </div>
+            </div>
+
+
+
+           <div class="not_visible" id="not_visible">
+
+
+               <div class="mockup">
+                   <div class="mockup_image">
+                       <img class="projects_image" src="project_images/Motivation-Mockup1.png" alt="mockup_motivation"/>
+                   </div>
+                   <div class="mockup_icons">
+                       <div class="mockup_skills">
+                           <div class="skills_image">
+                               <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                           </div>
+                       </div>
+                       <a href="https://zitaten-generator.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                       <a href="https://zitaten-generator.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                       <a href="https://zitaten-generator.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                   </div>
+               </div>
+
+               <div class="mockup">
+                   <div class="mockup_image">
+                       <img class="projects_image" src="project_images/KingOfQueens-Mockup1.png" alt="mockup_king_of_queens"/>
+                   </div>
+                   <div class="mockup_icons">
+                       <div class="mockup_skills">
+                           <div class="skills_image">
+                               <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                           </div>
+                       </div>
+                       <a href="https://king-of-queens-test.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                       <a href="https://king-of-queens-test.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                       <a href="https://king-of-queens-test.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                   </div>
+               </div>
+
+               <div class="mockup">
+                   <div class="mockup_image">
+                       <img class="projects_image" src="project_images/Meal-plan-react-Mockup1.png" alt="mockup_meal_plan"/>
+                   </div>
+                   <div class="mockup_icons">
+                       <div class="mockup_skills">
+                           <div class="skills_image">
+                               <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/react_icon.png" alt="react_icon">
+                           </div>
+                       </div>
+                       <a href="https://meal-plan-react.netlify.app/" class="mockup_button de_content" target="_blank">Show more</a>
+                       <a href="https://meal-plan-react.netlify.app/" class="mockup_button en_content" target="_blank">Show more</a>
+                       <a href="https://meal-plan-react.netlify.app/" class="mockup_button ua_content" target="_blank">Показати</a>
+                   </div>
+               </div>
+
+               <div class="mockup">
+                   <div class="mockup_image">
+                       <img class="projects_image" src="project_images/Lawyer-Mockup1.png" alt="mockup_lawyer"/>
+                   </div>
+                   <div class="mockup_icons">
+                       <div class="mockup_skills">
+                           <div class="skills_image">
+                               <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                           </div>
+                       </div>
+                       <a href="https://anwalt-seite-landingpage.glitch.me" class="mockup_button de_content" target="_blank">Show more</a>
+                       <a href="https://anwalt-seite-landingpage.glitch.me" class="mockup_button en_content" target="_blank">Show more</a>
+                       <a href="https://anwalt-seite-landingpage.glitch.me" class="mockup_button ua_content" target="_blank">Показати</a>
+                   </div>
+               </div>
+
+               <div class="mockup">
+                   <div class="mockup_image">
+                       <img class="projects_image" src="project_images/Training-timer-Mockup1.png" alt="mockup_training_timer"/>
+                   </div>
+                   <div class="mockup_icons">
+                       <div class="mockup_skills">
+                           <div class="skills_image">
+                               <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                           </div>
+                           <div class="skills_image">
+                               <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                           </div>
+                       </div>
+                       <a href="https://hiit-training-timer.glitch.me" class="mockup_button de_content" target="_blank">Show more</a>
+                       <a href="https://hiit-training-timer.glitch.me" class="mockup_button en_content" target="_blank">Show more</a>
+                       <a href="https://hiit-training-timer.glitch.me" class="mockup_button ua_content" target="_blank">Показати</a>
+                   </div>
+               </div>
+
+           </div>
+
+
+            <div class="not_visible_two" id="not_visible_two">
+
+
+
+                <div class="mockup">
+                    <div class="mockup_image">
+                        <img class="projects_image" src="project_images/Quiz-Mockup1.png" alt="mockup_quiz"/>
+                    </div>
+                    <div class="mockup_icons">
+                        <div class="mockup_skills">
+                            <div class="skills_image">
+                                <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                            </div>
+                            <div class="skills_image">
+                                <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                            </div>
+                            <div class="skills_image">
+                                <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                            </div>
+                        </div>
+                        <a href="https://capital-quiz.glitch.me" class="mockup_button de_content" target="_blank">Show more</a>
+                        <a href="https://capital-quiz.glitch.me" class="mockup_button en_content" target="_blank">Show more</a>
+                        <a href="https://capital-quiz.glitch.me" class="mockup_button ua_content" target="_blank">Показати</a>
+                    </div>
+                </div>
+
+                <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Shoppinglist-Mockup1.png" alt="mockup_shoppingslist"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                                </div>
+                            </div>
+                            <a href="https://shoppinglist-mit-galaxy.glitch.me" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://shoppinglist-mit-galaxy.glitch.me" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://shoppinglist-mit-galaxy.glitch.me" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Skin-test-Mockup1.png" alt="mockup_skin_test"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                                </div>
+                            </div>
+                            <a href="https://skin-test.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://skin-test.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://skin-test.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Manicure-Mockup1.png" alt="mockup_manicure"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/bootstrap_icon.png" alt="bootstrap_icon">
+                                </div>
+                            </div>
+                            <a href="https://manicure-bootstrap.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://manicure-bootstrap.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://manicure-bootstrap.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Vorhersage-Mockup1.png" alt="mockup_prophezeiung"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                                </div>
+                            </div>
+                            <a href="https://prophezeiung-zitate.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://prophezeiung-zitate.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://prophezeiung-zitate.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Furniture-Mockup1.png" alt="mockup_furniture"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                                </div>
+                            </div>
+                            <a href="https://my-furniture-shop.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://my-furniture-shop.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://my-furniture-shop.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Anwalt-Mockup1.png" alt="mockup_anwalt"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                            </div>
+                            <a href="https://anwalt-seite.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://anwalt-seite.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://anwalt-seite.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Konditorei-Mockup1.png" alt="mockup_backery"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                            </div>
+                            <a href="https://konditorei-seite.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://konditorei-seite.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://konditorei-seite.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/BoilEgg-Mockup1.png" alt="mockup_boil_egg"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                                </div>
+                            </div>
+                            <a href="https://boil-your-egg.glitch.me" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://boil-your-egg.glitch.me" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://boil-your-egg.glitch.me" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/SaC-Mockup1.png" alt="mockup_sex-and_the_city"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                                </div>
+                            </div>
+                            <a href="https://john-aidan-carrie.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://john-aidan-carrie.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://john-aidan-carrie.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                    <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Persoenlichkeitstyp-Mockup1.png" alt="mockup_test"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                                </div>
+                            </div>
+                            <a href="https://persoenlichkeitstyp-test.glitch.me/" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://persoenlichkeitstyp-test.glitch.me/" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://persoenlichkeitstyp-test.glitch.me/" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                <div class="mockup">
+                        <div class="mockup_image">
+                            <img class="projects_image" src="project_images/Camping-costs-calculator-Mockup1.png" alt="mockup_camping_calculator"/>
+                        </div>
+                        <div class="mockup_icons">
+                            <div class="mockup_skills">
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/html_icon.png" alt="html_icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/css_icon.png" alt="css _icon">
+                                </div>
+                                <div class="skills_image">
+                                    <img class="image" src="project_images/js_icon.png" alt="js_icon">
+                                </div>
+                            </div>
+                            <a href="https://camping-costs-calculator.glitch.me" class="mockup_button de_content" target="_blank">Show more</a>
+                            <a href="https://camping-costs-calculator.glitch.me" class="mockup_button en_content" target="_blank">Show more</a>
+                            <a href="https://camping-costs-calculator.glitch.me" class="mockup_button ua_content" target="_blank">Показати</a>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+                <div class="mockups_quantity">
+                    <div class="mockups_more" id="mockups_more">
+                        <img class="arrow_down" id="arrow_down" src="project_images/arrow_down.png" alt="arrow_down">
+                        <div>
+                            <p class="de_content more_projects" id="more_projects">More projects</p>
+                            <p class="en_content more_projects" id="more_projects_en">More projects</p>
+                            <p class="ua_content more_projects" id="more_projects_ua">Більше проектів</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mockups_even_more" id="mockups_even_more">
+                        <img class="arrow_down-two" id="arrow_down-two" src="project_images/arrow_down.png" alt="arrow_down">
+                        <div>
+                            <p class="de_content more_projects more_even_projects" id="more_even_projects">Even more projects</p>
+                            <p class="en_content more_projects more_even_projects" id="more_even_projects_en">Even more projects</p>
+                            <p class="ua_content more_projects more_even_projects" id="more_even_projects_ua">Ще більше проектів</p>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="prices" id="prices">
+        <div class="container">
+            <div class="main-items" id="main-items">
+                <div class="closePopup" id="closeFormPopup">X</div>
+                <div class="block">
+                    <div class="block-title">Illustrations 1</div>
+                    <div class="block-content">
+                        Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated
+                        collection of beautiful svg images that you can use completely free and without attribution! Add
+                        some quality, svg illustrations to your project courtesy of unDraw, a constantly updated collection
+                        of beautiful svg images that you can use completely free and without attribution! Add some quality,
+                        svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful
+                        svg images.
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-title">-Illustrations 2</div>
+                    <div class="block-content">
+                        Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated
+                        collection of beautiful svg images that you can use completely free and without attribution! Add
+                        some quality, svg
+                        Сompletely free and without attribution! Add some quality, svg illustrations to your project
+                        courtesy of unDraw, a constantly updated collection of beautiful svg images.
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-title">Illustrations 3</div>
+                    <div class="block-content">
+                        AСompletely free and without attribution! Add some quality, svg illustrations to your project
+                        courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use
+                        completely free and without attribution! Add some quality,
+                        svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful
+                        svg images. Draw, a constantly updated collection of beautiful svg images.
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block-title">Illustrations 1</div>
+                    <div class="block-content">
+                        Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated
+                        collection of beautiful svg images that you can use completely free and without attribution! Add
+                        some quality, svg illustrations to your project courtesy of unDraw, a constantly updated collection
+                        of beautiful svg images that you can use completely free and without attribution! Add some quality,
+                        svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful
+                        svg images.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+<section class="book" id="book">
+    <div class="container" id="container">
+        <div class="popupVisible" id="popupVisible">
+            <div class="popupVisible-buttons">
+                <button class="buttonForm" id="buttonForm">
+                    <div class="de_content">
+                    <p >PREIS</p>
+                    </div>
+                    <div class="en_content">
+                    <p>PRICE</p>
+                    </div>
+                    <div class="ua_content">
+                    <p>ЦІНА</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="contact" id="contact">
+        <div class="container">
+            <div class="footerBlocks">
+                <div class="footer-blockThree">
+                <div class="social">
+                    <img class="socialIcon" src="project_images/facebook.png" alt="facebook">
+                    <img class="socialIcon" src="project_images/instagram.png" alt="instagram">
+                    <img  class="socialIcon" src="project_images/linkedin.png" alt="linkedin">
+                </div>
+            </div>
+                <div class="footer-blockTwo">
+                    <div class="blockTwo-content">
+                    <div>
+                        <a href="https://wa.me/4017681001063"><img class="contact-data" src="project_images/phone.png" width="20" height="20" alt="phone"></a>
+                    </div>
+                    <div>
+                        <a class="contact-style" href="https://wa.me/4017681001063" target="_blank"><p>+49 176 810 01063 </p></a>
+                    </div>
+
+                </div>
+                    <div class="blockTwo-content">
+                    <div>
+                        <a href="mailto:alexandra-niederreiter@gmx.de"><img class="contact-data" src="project_images/email.png" width="20" height="15" alt="email"></a>
+                    </div>
+                    <div>
+                        <a class="contact-style" href="mailto:alexandra-niederreiter@gmx.de" target="_blank"><p>alexandra-niederreiter@gmx.de</p></a>
+                    </div>
+                </div>
+                <div class="blockTwo-content">
+                    <img class="contact-data" src="project_images/location.png" width="17" height="26" alt="linkedin">
+                    <p class="de_content">Germany</p>
+                    <p class="en_content">Germany</p>
+                    <p class="ua_content">Німеччина</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+<div class="menu-back-arrow">
+    <img src="project_images/arrow-up.png" alt="upArrow">
+</div>
+
+
+<div class="container_loader">
+    <div class="loading">
+        <img src="project_images/travolta_loader.gif">
+    </div>
+</div>
+
+<div class="bodyShadow" id="bodyShadow"></div>
+
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/form-validation.js"></script>
+<script src="scripts/jquery.inputmask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

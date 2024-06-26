@@ -1,0 +1,795 @@
+@media screen and (max-width: 1350px) {
+    .introduction .container {
+        justify-content: center;
+    }
+    .prices {
+        padding: 0;
+        top: 0;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .accordion-text .container {
+        padding: 15px;
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 1211px) {
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1187px) {
+    .loading img {
+
+        z-index: 3000;
+    }
+}
+@media screen and (max-width: 1070px) {
+    .loading img {
+
+        z-index: 3000;
+    }
+    .introduction .container .introduction_image {
+        right: -60px;
+    }
+    .services .container {
+        margin-bottom: -170px;
+        margin-top: 30px;
+    }
+    .section-header {
+        margin: 40px auto -120px;
+    }
+    .reason-block {
+        padding: 0 30px;
+    }
+    .wrapper {
+        margin-bottom: 0;
+    }
+    .section-header {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .skills_images {
+        padding: 0 25px;
+    }
+    .prices {
+        left: 0;
+    }
+    .loading img {
+        width: 60%;
+        z-index: 3000;
+    }
+}
+@media screen and (max-width: 974px) {
+    .heading {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .en_content, .ua_content {
+        display: none;
+    }
+}
+@media screen and (max-width: 950px) {
+
+    .introduction .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .introduction .container .introduction_image {
+        margin-top: 100px;
+    }
+    .introduction {
+        overflow: visible;
+    }
+    .introduction_text {
+        margin-top: -40px;
+    }
+    .introduction .container .introduction_image {
+        margin-right: 50px;
+    }
+    .mockup_icons {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .mockup_skills {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .mockup_button {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 925px) {
+    .introduction .container .introduction_image {
+        margin-left: -25px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .introduction .container .introduction_image {
+        margin-left: -35px;
+    }
+    .popupVisible {
+        padding: 50px 100px;
+    }
+    .certificate_image {
+        width: 380px;
+        height: 250px;
+        box-shadow: 1px 1px 10px #fff3cd;
+    }
+
+}
+@media screen and (max-width: 885px) {
+    .introduction .container .introduction_image {
+        margin-left: -45px;
+    }
+}
+@media screen and (max-width: 875px) {
+    .introduction .container .introduction_image {
+        margin-left: -55px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    .menu ul a {
+        font-size: 17px;
+    }
+    .translate {
+        width: 35px;
+    }
+    .translate_margin {
+        margin-right: -300px;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    .header .container {
+        padding: 38px 15px 0px 15px;
+    }
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+
+    .logo {
+        max-width: 100%;
+        margin-bottom: -20px;
+    }
+    .mockups_quantity {
+        flex-direction: column;
+    }
+    .mockups_more {
+        margin-right: 0;
+        margin-bottom: 30px;
+        order: 2;
+    }
+    .mockups_even_more {
+        margin-left: 0;
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    /*.introduction .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .introduction .container .introduction_image {
+        margin-top: 100px;
+    }
+    .introduction {
+        overflow: visible;
+    }
+    .introduction_text {
+        margin-top: -40px;
+    }*/
+    .skills .container {
+        padding: 20px 0;
+    }
+    .skills .container {
+        margin: 80px auto;
+    }
+    .accordion-text .container {
+        margin-bottom: 80px;
+    }
+    .projects .container {
+        margin: 60px auto 10px;
+    }
+    .mockups_more {
+        margin: 50px auto 30px;
+    }
+}
+@media screen and (max-width: 844px) {
+    .logo {
+        display: none;
+    }
+    .accordion-button strong {
+
+    }
+}
+@media screen and (max-width: 835px) {
+    .prices {
+        position: absolute;
+        z-index: 3000;
+        top: unset;
+    }
+
+    .certificates .certificate-block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .certificate_one {
+        margin-bottom: 50px;
+
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .skills .container {
+        margin: 50px auto 30px;
+    }
+    .skills .image {
+        width: 80px;
+        height: 80px;
+
+    }
+    .accordion {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+    .certificates .certificate-block {
+        margin-top: 50px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+.container, .description .container {
+    max-width: 540px;
+}
+    .menu ul a {
+         color: #fff;
+         font-size: 20px;
+         background-color: black;
+         z-index: 99;
+     }
+
+.header .container {
+    padding: 28px 15px 24px 15px;
+}
+
+.menu {
+    display: none;
+    margin-left: 0;
+}
+
+.smallMenu {
+    display: block;
+}
+
+.menu.open {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+}
+
+.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 50px;
+    top: 50px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+    justify-content: center;
+    height: 80%;
+    gap: 20px;
+    z-index: 99;
+}
+
+.menu ul a {
+    color: #fff;
+    font-size: 20px;
+    z-index: 99;
+}
+
+.menu path {
+    fill: #fff;
+}
+.closeSmallMenu {
+   display: none;
+}
+
+
+    .popupVisible-buttons button {
+        width: 200px;
+        height: 80px;
+        font-size: 30px;
+    }
+    .popupVisible {
+        padding: 50px 80px;
+    }
+    .prices .container, .description .container  {
+        max-width: 100%;
+    }
+    .logo {
+        display: block;
+    }
+
+    .skills .container {
+        margin: 5px auto 10px;
+    }
+    .skills .image {
+        width: 75px;
+        height: 75px;
+    }
+    .skills_name {
+        font-size: 13px;
+    }
+    .skills_image {
+        margin-right: 5px;
+    }
+    .accordion-button strong {
+        font-size: 23px;
+
+    }
+    .accordion-body {
+        font-size: 18px;
+    }
+    .accordion-text .container {
+        max-width: 580px;
+    }
+    .projects_title h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .mockup_icons {
+        margin-top: 22px;
+    }
+    .mockup_icons .skills_image img {
+        width: 45px;
+        height: 45px;
+    }
+    .mockup_button, .mockup_button:hover  {
+        font-size: 20px;
+    }
+    .popupVisible {
+        padding: 50px 70px;
+    }
+    .popupVisible-buttons button {
+        width: 200px;
+        height: 100px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 763px) {
+    .skills .image {
+        width: 65px;
+        height: 65px;
+    }
+}
+@media screen and (max-width: 744px) {
+    .me {
+        width: 300px;
+        height: 310px;
+    }
+    .introduction_text {
+        margin-bottom: -70px;
+        margin-top: -90px;
+    }
+    .introduction .container .introduction_image {
+        margin-top: 80px;
+    }
+
+
+    .accordion-button strong {
+        font-size: 20px;
+    }
+    .accordion-body {
+        font-size: 16px;
+    }
+    .projects_title h2 {
+        font-size: 28px;
+    }
+    .mockup_button {
+        font-size: 19px;
+    }
+    .mockup_button:hover {
+        font-size: 19px;
+        margin: 0 auto;
+    }
+    .more_projects {
+        font-size: 20px;
+    }
+    .heading {
+        font-size: 28px;
+    }
+    .reason-text h2 {
+        font-size: 21px;
+    }
+    .reason-text p {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .me {
+        width: 280px;
+        height: 290px;
+    }
+    .popupVisible-buttons button {
+        width: 180px;
+        height: 80px;
+        font-size: 29px;
+    }
+    .popupVisible {
+        padding: 40px 60px;
+    }
+}
+@media screen and (max-width: 658px) {
+    .introduction {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 600px) {
+    .introduction {
+        overflow: hidden;
+    }
+
+    .introduction_text p {
+        font-size: 16px;
+    }
+    .me {
+        width: 270px;
+        height: 280px;
+        margin-bottom: 10px;
+    }
+    .projects_title h2 {
+        font-size: 26px;
+    }
+    .heading {
+        font-size: 26px;
+    }
+    .introduction_text {
+        max-width: 480px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .introduction_text p {
+        font-size: 15px;
+    }
+    .introduction_text {
+        max-width: 470px;
+    }
+    .me {
+        width: 260px;
+        height: 270px;
+    }
+    .skills .image {
+        width: 55px;
+        height: 55px;
+    }
+    .accordion-button strong {
+        font-size: 18px;
+    }
+    .accordion-body {
+        font-size: 17px;
+    }
+    .projects_title h2 {
+        font-size: 24px;
+    }
+    .heading {
+        font-size: 24px;
+    }
+    .section-header {
+        margin: 0 auto -30px;
+    }
+    .number {
+        font-size: 50px;
+        margin: 25px 15px;
+    }
+    .reason-text h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .reason-text p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .accordion {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+    .introduction_text {
+        max-width: 420px;
+    }
+    .me {
+        width: 250px;
+        height: 260px;
+    }
+    .skills .image {
+        width: 50px;
+        height: 50px;
+    }
+    .footerBlocks {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 15px 30px;
+    }
+}
+@media screen and (max-width: 484px) {
+    .mockup_icons {
+        margin-top: 32px;
+    }
+    .mockup_icons .skills_image img {
+        width: 38px;
+        height: 40px;
+    }
+    .mockup_button {
+        font-size: 15px;
+    }
+    .more_projects {
+        font-size: 18px;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .popupVisible-buttons button {
+        width: 140px;
+        height: 60px;
+        font-size: 25px;
+    }
+    .popupVisible {
+        padding: 20px 20px;
+    }
+}
+
+    @media screen and (max-width: 480px) {
+
+
+
+
+    .footerBlocks {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-blockThree {
+    margin-bottom: 40px;
+}
+    .introduction_text {
+        max-width: 400px;
+    }
+    #arrow_down {
+        width: 45px;
+        height: 45px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .introduction_text {
+        max-width: 380px;
+    }
+    .me {
+        width: 240px;
+        height: 250px;
+    }
+    .introduction .container .introduction_image::before, .introduction .container .introduction_image::after {
+        top: 11%;
+        left: 11%;
+        width: 180px;
+        height: 180px;
+    }
+    .accordion-body {
+        font-size: 16px;
+    }
+
+    .reason-block {
+        padding: 0 20px;
+    }
+    .number {
+        font-size: 40px;
+        margin: 25px 10px 25px 0;
+    }
+}
+@media screen and (max-width: 445px) {
+    .me {
+        width: 230px;
+        height: 240px;
+    }
+
+
+    .icon-head {
+        margin-right: 20px;
+    }
+
+    .reason-text p {
+        font-size: 15px;
+    }
+
+
+}
+    @media screen and (max-width: 428px) {
+        .introduction_text {
+            max-width: 360px;
+        }
+
+        .reason-block {
+            padding: 0 10px;
+        }
+
+        .reason-block {
+            padding: 0 10px;
+        }
+
+        .reason-text h2 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .introduction .container .introduction_image {
+            margin-top: 100px;
+        }
+        .mockup_skills {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .mockup_image .projects_image {
+            margin-bottom: -70px;
+        }
+        .mockup_button, .mockup_button:hover {
+            font-size: 14px;
+        }
+    }
+@media screen and (max-width: 410px) {
+    .introduction_text {
+        max-width: 340px;
+    }
+    .services .container {
+        max-width: 500px;
+    }
+    .number {
+        font-size: 40px;
+        margin: 20px -6px 20px -6px;
+    }
+    .certificate_image {
+        width: 340px;
+        height: 210px;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    .introduction_text {
+        max-width: 320px;
+    }
+    .me {
+        width: 220px;
+        height: 230px;
+    }
+    .accordion-button strong {
+        font-size: 16px;
+    }
+    .skills .image {
+        width: 45px;
+        height: 45px;
+    }
+    .skills_name {
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width: 386px) {
+.services .container, .description  {
+    max-width: 450px;
+}
+}
+@media screen and (max-width: 377px) {
+    .skills_image {
+        margin: -5px 5px -2px;
+    }
+    .skills_images {
+        padding: 0;
+    }
+    .accordion-button strong {
+        font-size: 16px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+    .number {
+        font-size: 30px;
+        margin: 20px -8px 20px -15px;
+    }
+    .me {
+        width: 210px;
+        height: 220px;
+    }
+}
+@media screen and (max-width: 372px) {
+    .accordion-button strong {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 354px) {
+    .reason-text h2 {
+        font-size: 18px;
+    }
+    .reason-text p {
+        font-size: 12px;
+    }
+    .mockup_image .projects_image {
+        margin-bottom: -60px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .introduction_text {
+        max-width: 290px;
+    }
+    .introduction_text p {
+        font-size: 13px;
+    }
+    .accordion-button img, svg {
+        vertical-align: middle;
+        margin-left: -15px;
+    }
+    .container, .description .container {
+        max-width: 520px;
+    }
+    .heading {
+        font-size: 18px;
+    }
+    .reason-block {
+        padding: 0;
+    }
+    .blockTwo-content img {
+        margin-right: 5px;
+    }
+    .close {
+        width: 5px;
+    }
+    .certificate_image {
+        width: 310px;
+        height: 180px;
+
+    }
+
+}
+
